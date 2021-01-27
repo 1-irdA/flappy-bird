@@ -5,5 +5,5 @@ Flappy bird in JS.
 
 ## Play
 
-• Click on play
-• Mouse click to move
+• Click on play  
+• Mouse click to move  
