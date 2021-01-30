@@ -259,7 +259,7 @@ class Game {
     /**
      * Add a couple of pipes in pipes array
      */
-    static initGame = () => {
+    static init = () => {
         this.pipes.push(new Pipes(canvas.width, 0));
     }
 
@@ -272,7 +272,6 @@ class Game {
             if (event.clientX >= 120 && event.clientX <= 190
                 && event.clientY >= 230 && event.clientY <= 265) {
                 this.play = true;
-                this.initGame();
                 this.bird.setControls();
             }
         });
@@ -294,7 +293,7 @@ class Game {
                 this.bird.checkCollision(this.pipes[i]);
 
                 // Add pipes if current pipe is at left
-                if (this.pipes[i].x === canvas.width / 3) {
+                if (this.pipes[i].x === 0) {
                     this.pipes.push(
                         new Pipes(
                             canvas.width, 
@@ -339,4 +338,5 @@ class Game {
 }
 
 Game.launch();
+Game.init();
 Game.draw();
