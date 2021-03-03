@@ -1,4 +1,4 @@
-# FlappyBird
+# flappy-bird
 Flappy bird in JS.
 
 ![Alt text](git-img/demo.PNG?raw=true "Demo")
