@@ -88,8 +88,8 @@ class Pipes {
         this.y = y;
         this.pipeTop = new Image();
         this.pipeBottom =  new Image();
-        this.pipeTop.src = "img/pipeTop.png";
-        this.pipeBottom.src = "img/pipeBottom.png";
+        this.pipeTop.src = "assets/pipeTop.png";
+        this.pipeBottom.src = "assets/pipeBottom.png";
     }
 
     /**
@@ -249,9 +249,9 @@ class Writer {
  */
 class Game {
 
-    static background = new Background(0, 0, "img/background.png");
-    static foreground = new Foreground(0, canvas.height - FOREGROUND_HEIGHT, "img/foreground.png");
-    static bird = new Bird(canvas.width / 3, canvas.height / 2, 50, "img/bird.png");
+    static background = new Background(0, 0, "assets/background.png");
+    static foreground = new Foreground(0, canvas.height - FOREGROUND_HEIGHT, "assets/foreground.png");
+    static bird = new Bird(canvas.width / 3, canvas.height / 2, 50, "assets/bird.png");
     static play = false;
     static pipes = [];
     static score = 0;
